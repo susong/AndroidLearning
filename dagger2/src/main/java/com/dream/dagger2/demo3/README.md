@@ -1,0 +1,1 @@
+Application 注入方式

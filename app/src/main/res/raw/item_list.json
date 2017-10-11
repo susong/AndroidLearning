@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Dagger2",
+    "activity": "com.dream.dagger2.base.Dagger2Activity",
+    "detail": ""
+  },
+  {
+    "title": "RxJava2"
+  }
+]
