@@ -1,57 +1,57 @@
 [
   {
     "title": "demo1",
-    "activity": "com.dream.dagger2.demo1.Dagger2Demo1Activity",
+    "activity": "com.dream.learning.dagger2.demo1.Dagger2Demo1Activity",
     "detail": ""
   },
   {
     "title": "demo2",
-    "activity": "com.dream.dagger2.demo2.Dagger2Demo2Activity",
+    "activity": "com.dream.learning.dagger2.demo2.Dagger2Demo2Activity",
     "detail": ""
   },
   {
     "title": "demo3",
-    "activity": "com.dream.dagger2.demo3.Dagger2Demo3Activity",
+    "activity": "com.dream.learning.dagger2.demo3.Dagger2Demo3Activity",
     "detail": ""
   },
   {
     "title": "demo4",
-    "activity": "com.dream.dagger2.demo4.Dagger2Demo4Activity",
+    "activity": "com.dream.learning.dagger2.demo4.Dagger2Demo4Activity",
     "detail": ""
   },
   {
     "title": "demo5",
-    "activity": "com.dream.dagger2.demo5.Dagger2Demo5Activity",
+    "activity": "com.dream.learning.dagger2.demo5.Dagger2Demo5Activity",
     "detail": ""
   },
   {
     "title": "demo6",
-    "activity": "com.dream.dagger2.demo6.Dagger2Demo6Activity",
+    "activity": "com.dream.learning.dagger2.demo6.Dagger2Demo6Activity",
     "detail": ""
   },
   {
     "title": "demo7",
-    "activity": "com.dream.dagger2.demo7.Dagger2Demo7Activity",
+    "activity": "com.dream.learning.dagger2.demo7.Dagger2Demo7Activity",
     "detail": ""
   },
   {
     "title": "demo8",
-    "activity": "com.dream.dagger2.demo8.Dagger2Demo8Activity",
+    "activity": "com.dream.learning.dagger2.demo8.Dagger2Demo8Activity",
     "detail": ""
   },
   {
     "title": "demo9",
-    "activity": "com.dream.dagger2.demo9.Dagger2Demo9Activity",
+    "activity": "com.dream.learning.dagger2.demo9.Dagger2Demo9Activity",
     "detail": ""
   },
   {
     "title": "demo10",
-    "activity": "com.dream.dagger2.demo10.Dagger2Demo10Activity",
+    "activity": "com.dream.learning.dagger2.demo10.Dagger2Demo10Activity",
     "detail": ""
   },
   {
     "title": "demo11",
-    "activity": "com.dream.dagger2.demo11.Dagger2Demo11Activity",
+    "activity": "com.dream.learning.dagger2.demo11.Dagger2Demo11Activity",
     "detail": ""
   }
 ]
