@@ -1,10 +1,26 @@
 [
   {
-    "title": "Dagger2",
-    "activity": "com.dream.learning.dagger2.base.Dagger2Activity",
+    "title": "CustomView",
+    "activity": "com.dream.learning.custom.view.CustomViewActivity",
+    "view": "",
     "detail": ""
   },
   {
-    "title": "RxJava2"
+    "title": "Dagger2",
+    "activity": "com.dream.learning.dagger2.Dagger2Activity",
+    "view": "",
+    "detail": ""
+  },
+  {
+    "title": "RxJava2",
+    "activity": "",
+    "view": "",
+    "detail": ""
+  },
+  {
+    "title": "",
+    "activity": "",
+    "view": "",
+    "detail": ""
   }
 ]

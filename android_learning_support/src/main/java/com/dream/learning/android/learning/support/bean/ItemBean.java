@@ -1,7 +1,7 @@
-package com.dream.learning.bean;
+package com.dream.learning.android.learning.support.bean;
 
 /**
- * Created by SuSong on 2017/10/11.
+ * Created by SuSong on 2017/10/12.
  */
 
 public class ItemBean {
