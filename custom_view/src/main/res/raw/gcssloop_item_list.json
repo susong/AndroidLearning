@@ -1,6 +1,6 @@
 [
   {
-    "title": "Demo1",
+    "title": "Canvas之绘制图形",
     "activity": "com.dream.learning.custom.view.gcssloop.demo1.GcsSloopDemo1Activity",
     "view": "",
     "detail": ""
