@@ -2,7 +2,8 @@ package com.dream.learning.custom.view.gcssloop.demo1;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import com.dream.learning.android.learning.support.AndroidLearningSupportActivity;
 
 import java.util.ArrayList;
 
@@ -10,7 +11,7 @@ import java.util.ArrayList;
  * Created by SuSong on 2017/10/12.
  */
 
-public class GcsSloopDemo1Activity extends AppCompatActivity {
+public class GcsSloopDemo1Activity extends AndroidLearningSupportActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

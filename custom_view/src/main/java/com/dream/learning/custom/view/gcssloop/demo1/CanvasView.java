@@ -41,7 +41,7 @@ public class CanvasView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         //设置宽度和高度
-        setMeasuredDimension(widthMeasureSpec, 10000);
+        setMeasuredDimension(widthMeasureSpec, 5000);
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)

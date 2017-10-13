@@ -1,8 +1,10 @@
 [
   {
     "title": "GcsSloop",
-    "activity": "com.dream.learning.custom.view.gcssloop.GcsSloopActivity",
+    "activity": "com.dream.learning.MainActivity",
+    "layout": "",
     "view": "",
+    "raw": "gcssloop_item_list",
     "detail": ""
   }
 ]

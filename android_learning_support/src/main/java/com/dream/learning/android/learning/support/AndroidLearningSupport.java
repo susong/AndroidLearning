@@ -3,6 +3,7 @@ package com.dream.learning.android.learning.support;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,25 +24,14 @@ import java.util.ArrayList;
 
 public class AndroidLearningSupport {
 
-    public static void loadData(final Context context, final int resId) {
+    public static void init(final Context context, final int resId) {
         try {
 
             Activity activity = (Activity) context;
             activity.setContentView(R.layout.activity_android_learning_support);
             ListView listView = activity.findViewById(R.id.lv_item);
 
-            ByteArrayOutputStream baos  = new ByteArrayOutputStream();
-            BufferedInputStream   bis   = new BufferedInputStream(context.getResources().openRawResource(resId));
-            int                   len;
-            byte                  buf[] = new byte[1024];
-            while ((len = bis.read(buf)) != -1) {
-                baos.write(buf, 0, len);
-            }
-            final String json = baos.toString();
-
-            Gson                      gson              = new Gson();
-            Type                      type              = new TypeToken<ArrayList<ItemBean>>() {}.getType();
-            final ArrayList<ItemBean> itemBeanArrayList = gson.fromJson(json, type);
+            final ArrayList<ItemBean> itemBeanArrayList = loadData(context, resId);
             listView.setAdapter(new ArrayAdapter<ItemBean>(context, android.R.layout.simple_list_item_1, android.R.id.text1, itemBeanArrayList));
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -56,5 +46,33 @@ public class AndroidLearningSupport {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 加载raw中的json文件数据
+     *
+     * @param context
+     * @param rawResID
+     * @return
+     */
+    static ArrayList<ItemBean> loadData(final Context context, int rawResID) {
+        ArrayList<ItemBean> itemBeanArrayList = null;
+        try {
+            ByteArrayOutputStream baos  = new ByteArrayOutputStream();
+            BufferedInputStream   bis   = new BufferedInputStream(context.getResources().openRawResource(rawResID));
+            int                   len;
+            byte                  buf[] = new byte[1024];
+            while ((len = bis.read(buf)) != -1) {
+                baos.write(buf, 0, len);
+            }
+            final String json = baos.toString();
+            Log.d("XLog", "json: \r\n" + json);
+            Gson gson = new Gson();
+            Type type = new TypeToken<ArrayList<ItemBean>>() {}.getType();
+            itemBeanArrayList = gson.fromJson(json, type);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return itemBeanArrayList;
     }
 }

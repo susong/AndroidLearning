@@ -14,7 +14,7 @@ public class Dagger2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AndroidLearningSupport.loadData(this, R.raw.dagger2_item_list);
+        AndroidLearningSupport.init(this, R.raw.dagger2_item_list);
     }
 }
 

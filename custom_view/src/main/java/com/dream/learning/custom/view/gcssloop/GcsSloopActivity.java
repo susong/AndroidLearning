@@ -14,6 +14,6 @@ public class GcsSloopActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AndroidLearningSupport.loadData(this, R.raw.gcssloop_item_list);
+        AndroidLearningSupport.init(this, R.raw.gcssloop_item_list);
     }
 }

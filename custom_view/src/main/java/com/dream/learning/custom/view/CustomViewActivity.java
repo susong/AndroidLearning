@@ -13,6 +13,6 @@ public class CustomViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AndroidLearningSupport.loadData(this, R.raw.custom_view_item_list);
+        AndroidLearningSupport.init(this, R.raw.custom_view_item_list);
     }
 }

@@ -1,8 +1,18 @@
 [
   {
     "title": "Canvas之绘制图形",
-    "activity": "com.dream.learning.custom.view.gcssloop.demo1.GcsSloopDemo1Activity",
+    "activity": "com.dream.learning.MainActivity",
+    "layout": "activity_gcssloop_demo1",
     "view": "",
+    "raw": "",
+    "detail": ""
+  },
+  {
+    "title": "PieView",
+    "activity": "com.dream.learning.custom.view.gcssloop.demo1.GcsSloopDemo1Activity",
+    "layout": "",
+    "view": "",
+    "raw": "",
     "detail": ""
   }
 ]
