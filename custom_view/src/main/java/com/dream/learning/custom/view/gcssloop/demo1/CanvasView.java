@@ -13,9 +13,12 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by SuSong on 2017/10/12.
+ * Author:      SuSong
+ * Email:       751971697@qq.com
+ * GitHub:      https://github.com/susong7519
+ * Date:        2017/10/13 下午2:14
+ * Description: AndroidLearning
  */
-
 public class CanvasView extends View {
 
     // 1.创建一个画笔

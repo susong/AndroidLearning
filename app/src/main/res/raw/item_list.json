@@ -1,19 +1,11 @@
 [
   {
     "title": "CustomView",
-    "activity": "com.dream.learning.MainActivity",
-    "layout": "",
-    "view": "",
-    "raw": "custom_view_item_list",
-    "detail": ""
+    "raw": "custom_view_item_list"
   },
   {
     "title": "Dagger2",
-    "activity": "com.dream.learning.dagger2.Dagger2Activity",
-    "layout": "",
-    "view": "",
-    "raw": "",
-    "detail": ""
+    "activity": "com.dream.learning.dagger2.Dagger2Activity"
   },
   {
     "title": "",
@@ -21,6 +13,9 @@
     "layout": "",
     "view": "",
     "raw": "",
-    "detail": ""
+    "detail": "",
+    "data": [
+    ]
   }
 ]
+

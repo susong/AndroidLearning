@@ -12,9 +12,12 @@ import android.view.View;
 import java.util.ArrayList;
 
 /**
- * Created by SuSong on 2017/10/13.
+ * Author:      SuSong
+ * Email:       751971697@qq.com
+ * GitHub:      https://github.com/susong7519
+ * Date:        2017/10/13 下午2:14
+ * Description: AndroidLearning
  */
-
 public class PieView extends View {
 
     // 颜色表 (注意: 此处定义颜色使用的是ARGB，带Alpha通道的)

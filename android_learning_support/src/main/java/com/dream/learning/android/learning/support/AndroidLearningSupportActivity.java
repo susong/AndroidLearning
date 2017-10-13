@@ -47,10 +47,7 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
             if (!TextUtils.isEmpty(mItemBean.getRaw())) {
                 // 通过字符串来使用R下面资源的ID值
                 int rawResID = getResources().getIdentifier(mItemBean.getRaw(), "raw", getPackageName());
-                mItemBean.setItemBeanArrayList(AndroidLearningSupport.loadData(this, rawResID));
-            } else if (getRawResID() != -1) {
-                int rawResID = getRawResID();
-                mItemBean.setItemBeanArrayList(AndroidLearningSupport.loadData(this, rawResID));
+                mItemBean.setData(AndroidLearningSupport.loadData(this, rawResID));
             }
 
             // 获取布局
@@ -58,8 +55,6 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
                 // 通过字符串来使用R下面资源的ID值
                 int layoutResID = getResources().getIdentifier(mItemBean.getLayout(), "layout", getPackageName());
                 setContentView(layoutResID);
-            } else if (getLayoutResID() != -1) {
-                setContentView(getLayoutResID());
             } else if (!TextUtils.isEmpty(mItemBean.getView())) {
                 // 传入的是自定义View的class，使用反射来生成对象。
                 Class<?>       aClass      = Class.forName(mItemBean.getView());
@@ -78,10 +73,11 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
                 }
             }
         } else {
+            // 首页启动没有数据传入时
             mItemBean = new ItemBean();
 
             if (getRawResID() != -1) {
-                mItemBean.setItemBeanArrayList(AndroidLearningSupport.loadData(this, getRawResID()));
+                mItemBean.setData(AndroidLearningSupport.loadData(this, getRawResID()));
             }
 
             if (getActivityClass() != null) {
@@ -101,17 +97,17 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
         // 获取ListView，并设置数据和点击事件。
         ListView lvItem = (ListView) findViewById(R.id.lv_item);
         if (lvItem != null) {
-            lvItem.setAdapter(new ArrayAdapter<ItemBean>(this, android.R.layout.simple_list_item_1, android.R.id.text1, mItemBean.getItemBeanArrayList()));
+            lvItem.setAdapter(new ArrayAdapter<ItemBean>(this, android.R.layout.simple_list_item_1, android.R.id.text1, mItemBean.getData()));
             lvItem.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     try {
-                        String activity = mItemBean.getItemBeanArrayList().get(position).getActivity();
+                        String activity = mItemBean.getData().get(position).getActivity();
                         if (TextUtils.isEmpty(activity)) {
                             activity = "com.dream.learning.MainActivity";
                         }
                         Intent intent = new Intent(AndroidLearningSupportActivity.this, Class.forName(activity));
-                        intent.putExtra("data", mItemBean.getItemBeanArrayList().get(position));
+                        intent.putExtra("data", mItemBean.getData().get(position));
                         startActivity(intent);
                     } catch (Exception e) {
                         e.printStackTrace();

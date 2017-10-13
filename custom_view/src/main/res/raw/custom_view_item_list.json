@@ -2,9 +2,16 @@
   {
     "title": "GcsSloop",
     "activity": "com.dream.learning.MainActivity",
-    "layout": "",
-    "view": "",
-    "raw": "gcssloop_item_list",
-    "detail": ""
+    "data": [
+      {
+        "title": "Canvas之绘制图形",
+        "activity": "com.dream.learning.MainActivity",
+        "layout": "view_gcssloop_demo1_canvas_view"
+      },
+      {
+        "title": "Canvas之绘制图形——示例——饼状图",
+        "activity": "com.dream.learning.custom.view.gcssloop.demo1.PieViewActivity"
+      }
+    ]
   }
 ]

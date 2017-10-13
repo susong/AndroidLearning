@@ -8,14 +8,16 @@ import com.dream.learning.android.learning.support.AndroidLearningSupportActivit
 import java.util.ArrayList;
 
 /**
- * Created by SuSong on 2017/10/12.
+ * Author:      SuSong
+ * Email:       751971697@qq.com
+ * GitHub:      https://github.com/susong7519
+ * Date:        2017/10/13 下午2:14
+ * Description: AndroidLearning
  */
-
-public class GcsSloopDemo1Activity extends AndroidLearningSupportActivity {
+public class PieViewActivity extends AndroidLearningSupportActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_gcssloop_demo1);
 
         PieView pieView = new PieView(this);
         setContentView(pieView);

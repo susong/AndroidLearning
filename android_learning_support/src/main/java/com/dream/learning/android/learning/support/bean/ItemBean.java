@@ -12,13 +12,13 @@ import java.util.ArrayList;
  */
 public class ItemBean implements Serializable {
 
-    private String title;
-    private String activity;
-    private String layout;
-    private String view;
-    private String raw;
-    private String detail;
-    private ArrayList<ItemBean> mItemBeanArrayList = new ArrayList<>();
+    private String title;       //标题
+    private String activity;    //要启动的Activity类的全类名
+    private String layout;      //layout布局资料ID字符串
+    private String view;        //要显示的自定义View类的全类名
+    private String raw;         //raw中的json文件数据资料ID字符串
+    private String detail;      //说明
+    private ArrayList<ItemBean> data = new ArrayList<>();
 
     public String getTitle() {
         return title;
@@ -68,12 +68,12 @@ public class ItemBean implements Serializable {
         this.detail = detail;
     }
 
-    public ArrayList<ItemBean> getItemBeanArrayList() {
-        return mItemBeanArrayList;
+    public ArrayList<ItemBean> getData() {
+        return data;
     }
 
-    public void setItemBeanArrayList(ArrayList<ItemBean> itemBeanArrayList) {
-        mItemBeanArrayList = itemBeanArrayList;
+    public void setData(ArrayList<ItemBean> data) {
+        this.data = data;
     }
 
     @Override
