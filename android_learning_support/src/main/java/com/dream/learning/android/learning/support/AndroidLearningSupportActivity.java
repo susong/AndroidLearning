@@ -106,7 +106,11 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     try {
-                        Intent intent = new Intent(AndroidLearningSupportActivity.this, Class.forName(mItemBean.getItemBeanArrayList().get(position).getActivity()));
+                        String activity = mItemBean.getItemBeanArrayList().get(position).getActivity();
+                        if (TextUtils.isEmpty(activity)) {
+                            activity = "com.dream.learning.MainActivity";
+                        }
+                        Intent intent = new Intent(AndroidLearningSupportActivity.this, Class.forName(activity));
                         intent.putExtra("data", mItemBean.getItemBeanArrayList().get(position));
                         startActivity(intent);
                     } catch (Exception e) {
@@ -118,16 +122,16 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
     }
 
     /**
-     * raw id
+     * 直接跳转到某个Activity
      *
      * @return
      */
-    protected int getRawResID() {
-        return -1;
+    protected Class getActivityClass() {
+        return null;
     }
 
     /**
-     * layout id
+     * 直接加载某个layout
      *
      * @return
      */
@@ -136,11 +140,11 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
     }
 
     /**
-     * Activity class
+     * 初始的raw中的json文件数据
      *
      * @return
      */
-    protected Class getActivityClass() {
-        return null;
+    protected int getRawResID() {
+        return -1;
     }
 }
