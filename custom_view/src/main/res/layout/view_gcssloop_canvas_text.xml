@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <com.dream.learning.custom.view.gcssloop.demo1.CanvasView
+    <com.dream.learning.custom.view.GcsSloop._03_Canvas_PictureText.Canvas_Text_View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />

@@ -1,4 +1,4 @@
-package com.dream.learning.custom.view.gcssloop.demo1;
+package com.dream.learning.custom.view.GcsSloop._01_Canvas_BasicGraphics;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

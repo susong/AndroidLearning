@@ -1,4 +1,4 @@
-package com.dream.learning.custom.view.gcssloop.demo1;
+package com.dream.learning.custom.view.GcsSloop._01_Canvas_BasicGraphics;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -19,17 +19,17 @@ import android.view.View;
  * Date:        2017/10/13 下午2:14
  * Description: AndroidLearning
  */
-public class CanvasView extends View {
+public class Canvas_BasicGraphics_View extends View {
 
     // 1.创建一个画笔
     private Paint mPaint = new Paint();
 
-    public CanvasView(Context context) {
+    public Canvas_BasicGraphics_View(Context context) {
         super(context);
     }
 
     // 3.在构造函数中初始化
-    public CanvasView(Context context, @Nullable AttributeSet attrs) {
+    public Canvas_BasicGraphics_View(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initPaint();
     }

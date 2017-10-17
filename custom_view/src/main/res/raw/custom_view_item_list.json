@@ -6,11 +6,30 @@
       {
         "title": "Canvas之绘制图形",
         "activity": "com.dream.learning.MainActivity",
-        "layout": "view_gcssloop_demo1_canvas_view"
+        "layout": "view_gcssloop_canvas_basicgraphics"
       },
       {
         "title": "Canvas之绘制图形——示例——饼状图",
-        "activity": "com.dream.learning.custom.view.gcssloop.demo1.PieViewActivity"
+        "activity": "com.dream.learning.custom.view.GcsSloop._01_Canvas_BasicGraphics.PieViewActivity"
+      },
+      {
+        "title": "Canvas之画布操作",
+        "activity": "com.dream.learning.MainActivity",
+        "layout": "view_gcssloop_canvas_convert"
+      },
+      {
+        "title": "Canvas之图片",
+        "activity": "com.dream.learning.MainActivity",
+        "layout": "view_gcssloop_canvas_picture"
+      },
+      {
+        "title": "Canvas之图片--示例--CheckView",
+        "activity": "com.dream.learning.custom.view.GcsSloop._03_Canvas_PictureText.Canvas_PictureText_CheckView_Activity"
+      },
+      {
+        "title": "Canvas之文字",
+        "activity": "com.dream.learning.MainActivity",
+        "layout": "view_gcssloop_canvas_text"
       }
     ]
   }
