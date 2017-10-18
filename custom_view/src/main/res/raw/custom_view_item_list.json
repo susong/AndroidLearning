@@ -30,6 +30,16 @@
         "title": "Canvas之文字",
         "activity": "com.dream.learning.MainActivity",
         "layout": "view_gcssloop_canvas_text"
+      },
+      {
+        "title": "Path之基本操作",
+        "activity": "com.dream.learning.MainActivity",
+        "layout": "view_gcssloop_path_basic"
+      },
+      {
+        "title": "Path之基本操作--示例--雷达图(蜘蛛网图)",
+        "activity": "com.dream.learning.MainActivity",
+        "layout": "view_radar"
       }
     ]
   }

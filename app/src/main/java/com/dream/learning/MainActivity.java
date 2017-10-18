@@ -23,7 +23,7 @@ public class MainActivity extends AndroidLearningSupportActivity {
      */
     @Override
     protected int getLayoutResID() {
-//        return R.layout.view_gcssloop_canvas_text;
+//        return R.layout.view_radar;
         return super.getLayoutResID();
     }
 
