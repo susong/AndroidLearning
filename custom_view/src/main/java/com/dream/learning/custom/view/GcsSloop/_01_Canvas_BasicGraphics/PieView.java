@@ -90,8 +90,9 @@ public class PieView extends View {
 
     // 初始化数据
     public void initData(ArrayList<PieData> data) {
-        if (null == mData || mData.size() == 0)   // 数据有问题 直接返回
+        if (null == mData || mData.size() == 0) {   // 数据有问题 直接返回
             return;
+        }
 
         float sumValue = 0;
         for (int i = 0; i < mData.size(); i++) {

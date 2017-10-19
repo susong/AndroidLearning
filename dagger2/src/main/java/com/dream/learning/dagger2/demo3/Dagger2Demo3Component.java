@@ -5,9 +5,12 @@ import javax.inject.Singleton;
 import dagger.Component;
 
 /**
- * Created by SuSong on 2017/10/10.
+ * Author:      SuSong
+ * Email:       751971697@qq.com
+ * GitHub:      https://github.com/susong7519
+ * Date:        2017/10/10 下午2:14
+ * Description: AndroidLearning
  */
-
 @Singleton
 @Component(modules = Dagger2Demo3Module.class)
 public interface Dagger2Demo3Component {

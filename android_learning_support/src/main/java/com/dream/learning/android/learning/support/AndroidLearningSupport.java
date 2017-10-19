@@ -19,9 +19,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 /**
- * Created by SuSong on 2017/10/12.
+ * Author:      SuSong
+ * Email:       751971697@qq.com
+ * GitHub:      https://github.com/susong7519
+ * Date:        2017/10/13 下午2:14
+ * Description: AndroidLearning
  */
-
 public class AndroidLearningSupport {
 
     public static void init(final Context context, final int resId) {
@@ -58,10 +61,10 @@ public class AndroidLearningSupport {
     static ArrayList<ItemBean> loadData(final Context context, int rawResID) {
         ArrayList<ItemBean> itemBeanArrayList = null;
         try {
-            ByteArrayOutputStream baos  = new ByteArrayOutputStream();
-            BufferedInputStream   bis   = new BufferedInputStream(context.getResources().openRawResource(rawResID));
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            BufferedInputStream   bis  = new BufferedInputStream(context.getResources().openRawResource(rawResID));
             int                   len;
-            byte                  buf[] = new byte[1024];
+            byte[]                buf  = new byte[1024];
             while ((len = bis.read(buf)) != -1) {
                 baos.write(buf, 0, len);
             }

@@ -166,8 +166,9 @@ public class Canvas_PictureText_CheckView extends View {
      * @param animDuration
      */
     public void setAnimDuration(int animDuration) {
-        if (animDuration <= 0)
+        if (animDuration <= 0) {
             return;
+        }
         this.animDuration = animDuration;
     }
 
@@ -176,6 +177,7 @@ public class Canvas_PictureText_CheckView extends View {
      *
      * @param color
      */
+    @Override
     public void setBackgroundColor(int color) {
         mPaint.setColor(color);
     }

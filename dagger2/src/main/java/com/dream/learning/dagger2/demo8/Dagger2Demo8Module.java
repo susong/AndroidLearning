@@ -6,7 +6,11 @@ import dagger.Module;
 import dagger.Provides;
 
 /**
- * Created by SuSong on 2017/10/11.
+ * Author:      SuSong
+ * Email:       751971697@qq.com
+ * GitHub:      https://github.com/susong7519
+ * Date:        2017/10/11 下午2:14
+ * Description: AndroidLearning
  */
 @Module
 public class Dagger2Demo8Module {
