@@ -20,7 +20,7 @@ public class Canvas_Text_View extends View {
     private Paint mPaint;
 
     public Canvas_Text_View(Context context) {
-        super(context, null);
+        this(context, null);
     }
 
     public Canvas_Text_View(Context context, @Nullable AttributeSet attrs) {
@@ -33,12 +33,6 @@ public class Canvas_Text_View extends View {
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setTextSize(50);
-    }
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        //设置宽度和高度
-        setMeasuredDimension(widthMeasureSpec, 10000);
     }
 
     @Override

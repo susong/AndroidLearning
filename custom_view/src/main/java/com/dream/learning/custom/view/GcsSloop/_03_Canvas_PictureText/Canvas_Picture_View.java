@@ -51,7 +51,7 @@ public class Canvas_Picture_View extends View {
     }
 
     public Canvas_Picture_View(Context context) {
-        super(context);
+        this(context, null);
     }
 
     // 3.在使用前调用(我在构造函数中调用了)
@@ -71,7 +71,7 @@ public class Canvas_Picture_View extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         //设置宽度和高度
-        setMeasuredDimension(widthMeasureSpec, 10000);
+        setMeasuredDimension(widthMeasureSpec, 5000);
     }
 
     @Override

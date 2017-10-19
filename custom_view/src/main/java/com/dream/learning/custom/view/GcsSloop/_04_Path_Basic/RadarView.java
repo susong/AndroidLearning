@@ -31,7 +31,7 @@ public class RadarView extends View {
     private Paint textPaint;                //文本画笔
 
     public RadarView(Context context) {
-        super(context, null);
+        this(context, null);
     }
 
     public RadarView(Context context, @Nullable AttributeSet attrs) {

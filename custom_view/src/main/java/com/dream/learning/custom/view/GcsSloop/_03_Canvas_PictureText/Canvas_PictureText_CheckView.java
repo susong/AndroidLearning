@@ -42,7 +42,7 @@ public class Canvas_PictureText_CheckView extends View {
     private boolean isCheck = false;            // 是否只选中状态
 
     public Canvas_PictureText_CheckView(Context context) {
-        super(context, null);
+        this(context, null);
     }
 
     public Canvas_PictureText_CheckView(Context context, @Nullable AttributeSet attrs) {

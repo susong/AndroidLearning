@@ -5,34 +5,35 @@
               android:orientation="vertical"
     >
 
-    <com.dream.learning.custom.view.GcsSloop._03_Canvas_PictureText.Canvas_PictureText_CheckView
-        android:id="@+id/cv"
+    <com.dream.learning.custom.view.GcsSloop._05_Path_Bezier.Path_Bezier_Cubic_View
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         />
 
-    <LinearLayout
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
 
-        <Button
-            android:id="@+id/bt_check"
+        <RadioButton
+            android:id="@+id/rb_control1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="check"
+            android:checked="true"
+            android:gravity="center"
+            android:text="控制点1"
             />
 
-        <Button
-            android:id="@+id/bt_uncheck"
+        <RadioButton
+            android:id="@+id/rb_control2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="uncheck"
+            android:gravity="center"
+            android:text="控制点2"
             />
-
-    </LinearLayout>
-
+    </RadioGroup>
 </LinearLayout>

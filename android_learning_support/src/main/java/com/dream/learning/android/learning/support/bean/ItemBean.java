@@ -12,12 +12,13 @@ import java.util.ArrayList;
  */
 public class ItemBean implements Serializable {
 
-    private String title;       //标题
-    private String activity;    //要启动的Activity类的全类名
-    private String layout;      //layout布局资料ID字符串
-    private String view;        //要显示的自定义View类的全类名
-    private String raw;         //raw中的json文件数据资料ID字符串
-    private String detail;      //说明
+    private String  title;       //标题
+    private String  activity;    //要启动的Activity类的全类名
+    private String  layout;      //layout布局资料ID字符串
+    private String  view;        //要显示的自定义View类的全类名
+    private String  raw;         //raw中的json文件数据资料ID字符串
+    private boolean isLong;      //是否需要包含在ScrollView中
+    private String  detail;      //说明
     private ArrayList<ItemBean> data = new ArrayList<>();
 
     public String getTitle() {
@@ -58,6 +59,14 @@ public class ItemBean implements Serializable {
 
     public void setRaw(String raw) {
         this.raw = raw;
+    }
+
+    public boolean isLong() {
+        return isLong;
+    }
+
+    public void setLong(boolean aLong) {
+        isLong = aLong;
     }
 
     public String getDetail() {

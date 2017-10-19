@@ -5,7 +5,6 @@
     "data": [
       {
         "title": "Canvas之绘制图形",
-        "activity": "com.dream.learning.MainActivity",
         "layout": "view_gcssloop_canvas_basicgraphics"
       },
       {
@@ -14,13 +13,13 @@
       },
       {
         "title": "Canvas之画布操作",
-        "activity": "com.dream.learning.MainActivity",
-        "layout": "view_gcssloop_canvas_convert"
+        "view": "com.dream.learning.custom.view.GcsSloop._02_Canvas_Convert.Canvas_Convert_View",
+        "isLong": true
       },
       {
         "title": "Canvas之图片",
-        "activity": "com.dream.learning.MainActivity",
-        "layout": "view_gcssloop_canvas_picture"
+        "view": "com.dream.learning.custom.view.GcsSloop._03_Canvas_PictureText.Canvas_Picture_View",
+        "isLong": true
       },
       {
         "title": "Canvas之图片--示例--CheckView",
@@ -28,18 +27,28 @@
       },
       {
         "title": "Canvas之文字",
-        "activity": "com.dream.learning.MainActivity",
-        "layout": "view_gcssloop_canvas_text"
+        "view": "com.dream.learning.custom.view.GcsSloop._03_Canvas_PictureText.Canvas_Text_View"
       },
       {
         "title": "Path之基本操作",
-        "activity": "com.dream.learning.MainActivity",
-        "layout": "view_gcssloop_path_basic"
+        "view": "com.dream.learning.custom.view.GcsSloop._04_Path_Basic.Path_Basic_View",
+        "isLong": true
       },
       {
         "title": "Path之基本操作--示例--雷达图(蜘蛛网图)",
-        "activity": "com.dream.learning.MainActivity",
-        "layout": "view_radar"
+        "view": "com.dream.learning.custom.view.GcsSloop._04_Path_Basic.RadarView"
+      },
+      {
+        "title": "Path之贝塞尔曲线--二阶曲线",
+        "view": "com.dream.learning.custom.view.GcsSloop._05_Path_Bezier.Path_Bezier_Quad_View"
+      },
+      {
+        "title": "Path之贝塞尔曲线--三阶曲线",
+        "activity": "com.dream.learning.custom.view.GcsSloop._05_Path_Bezier.Path_Bezier_Cubic_View_Activity"
+      },
+      {
+        "title": "Path之贝塞尔曲线--示例--圆渐变成为心形",
+        "view": "com.dream.learning.custom.view.GcsSloop._05_Path_Bezier.Path_Bezier_Heart_View"
       }
     ]
   }

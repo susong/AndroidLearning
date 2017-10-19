@@ -25,7 +25,7 @@ public class Canvas_BasicGraphics_View extends View {
     private Paint mPaint = new Paint();
 
     public Canvas_BasicGraphics_View(Context context) {
-        super(context);
+        this(context, null);
     }
 
     // 3.在构造函数中初始化

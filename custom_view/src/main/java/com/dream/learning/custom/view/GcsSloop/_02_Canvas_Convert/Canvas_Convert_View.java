@@ -23,7 +23,7 @@ public class Canvas_Convert_View extends View {
     private int mHeight;
 
     public Canvas_Convert_View(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public Canvas_Convert_View(Context context, @Nullable AttributeSet attrs) {

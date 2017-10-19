@@ -41,7 +41,7 @@ public class PieView extends View {
     private Paint mPaint = new Paint();
 
     public PieView(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public PieView(Context context, @Nullable AttributeSet attrs) {

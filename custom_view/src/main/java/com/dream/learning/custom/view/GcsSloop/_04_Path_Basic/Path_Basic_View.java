@@ -25,7 +25,7 @@ public class Path_Basic_View extends View {
     private int   mHeight;
 
     public Path_Basic_View(Context context) {
-        super(context, null);
+        this(context, null);
     }
 
     public Path_Basic_View(Context context, @Nullable AttributeSet attrs) {

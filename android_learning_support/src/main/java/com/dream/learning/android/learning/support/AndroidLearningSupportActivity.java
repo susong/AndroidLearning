@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ScrollView;
 
 import com.dream.learning.android.learning.support.bean.ItemBean;
 
@@ -51,6 +52,7 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
             }
 
             // 获取布局
+
             if (!TextUtils.isEmpty(mItemBean.getLayout())) {
                 // 通过字符串来使用R下面资源的ID值
                 int layoutResID = getResources().getIdentifier(mItemBean.getLayout(), "layout", getPackageName());
@@ -60,7 +62,13 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
                 Class<?>       aClass      = Class.forName(mItemBean.getView());
                 Constructor<?> constructor = aClass.getConstructor(Context.class);
                 View           view        = (View) constructor.newInstance(this);
-                setContentView(view);
+                if (mItemBean.isLong()) {
+                    ScrollView scrollView = new ScrollView(getApplicationContext());
+                    scrollView.addView(view);
+                    setContentView(scrollView);
+                } else {
+                    setContentView(view);
+                }
             } else {
                 setContentView(R.layout.activity_android_learning_support);
             }
@@ -84,6 +92,19 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
                 Intent intent = new Intent(AndroidLearningSupportActivity.this, getActivityClass());
                 intent.putExtra("data", mItemBean);
                 startActivity(intent);
+                return;
+            }
+
+            if (getViewClass() != null) {
+                Constructor<?> constructor = getViewClass().getConstructor(Context.class);
+                View           view        = (View) constructor.newInstance(this);
+                if (isLong()) {
+                    ScrollView scrollView = new ScrollView(getApplicationContext());
+                    scrollView.addView(view);
+                    setContentView(scrollView);
+                } else {
+                    setContentView(view);
+                }
                 return;
             }
 
@@ -127,12 +148,30 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
     }
 
     /**
+     * 直接加载某个View
+     *
+     * @return
+     */
+    protected Class getViewClass() {
+        return null;
+    }
+
+    /**
      * 直接加载某个layout
      *
      * @return
      */
     protected int getLayoutResID() {
         return -1;
+    }
+
+    /**
+     * 是否需要包含在ScrollView中
+     *
+     * @return
+     */
+    protected boolean isLong() {
+        return false;
     }
 
     /**
@@ -143,4 +182,6 @@ public class AndroidLearningSupportActivity extends AppCompatActivity {
     protected int getRawResID() {
         return -1;
     }
+
+
 }

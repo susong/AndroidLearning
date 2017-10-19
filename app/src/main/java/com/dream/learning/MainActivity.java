@@ -23,6 +23,18 @@ public class MainActivity extends AndroidLearningSupportActivity {
     }
 
     /**
+     * 直接加载某个View
+     *
+     * @return
+     */
+    @Override
+    protected Class getViewClass() {
+//        return Path_Bezier_Heart_View.class;
+        return super.getViewClass();
+    }
+
+
+    /**
      * 直接加载某个layout
      *
      * @return
@@ -31,6 +43,16 @@ public class MainActivity extends AndroidLearningSupportActivity {
     protected int getLayoutResID() {
 //        return R.layout.view_radar;
         return super.getLayoutResID();
+    }
+
+    /**
+     * 是否需要包含在ScrollView中
+     *
+     * @return
+     */
+    protected boolean isLong() {
+//        return true;
+        return false;
     }
 
     /**
