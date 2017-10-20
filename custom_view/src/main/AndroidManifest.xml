@@ -12,6 +12,7 @@
         <activity android:name=".GcsSloop._01_Canvas_BasicGraphics.PieViewActivity"/>
         <activity android:name=".GcsSloop._03_Canvas_PictureText.Canvas_PictureText_CheckView_Activity"/>
         <activity android:name=".GcsSloop._05_Path_Bezier.Path_Bezier_Cubic_View_Activity"/>
+        <activity android:name=".GcsSloop._05_Path_Bezier.MagicCircleViewActivity"/>
     </application>
 
 </manifest>

@@ -49,6 +49,10 @@
       {
         "title": "Path之贝塞尔曲线--示例--圆渐变成为心形",
         "view": "com.dream.learning.custom.view.GcsSloop._05_Path_Bezier.Path_Bezier_Heart_View"
+      },
+      {
+        "title": "Path之贝塞尔曲线--示例--弹性的球",
+        "activity": "com.dream.learning.custom.view.GcsSloop._05_Path_Bezier.MagicCircleViewActivity"
       }
     ]
   }

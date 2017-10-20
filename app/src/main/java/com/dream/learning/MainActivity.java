@@ -1,6 +1,7 @@
 package com.dream.learning;
 
 import com.dream.learning.android.learning.support.AndroidLearningSupportActivity;
+import com.dream.learning.custom.view.GcsSloop._05_Path_Bezier.MagicCircleViewActivity;
 
 /**
  * Author:      SuSong
@@ -18,8 +19,8 @@ public class MainActivity extends AndroidLearningSupportActivity {
      */
     @Override
     protected Class getActivityClass() {
-//        return GcsSloopDemo1Activity.class;
-        return super.getActivityClass();
+        return MagicCircleViewActivity.class;
+//        return super.getActivityClass();
     }
 
     /**
@@ -29,7 +30,7 @@ public class MainActivity extends AndroidLearningSupportActivity {
      */
     @Override
     protected Class getViewClass() {
-//        return Path_Bezier_Heart_View.class;
+//        return MagicCircleView.class;
         return super.getViewClass();
     }
 
